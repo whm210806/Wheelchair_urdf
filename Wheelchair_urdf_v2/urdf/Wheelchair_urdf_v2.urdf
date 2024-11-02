@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Wheelchair_urdf_v2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.14292 -0.0062686 -0.18573"
+        rpy="0 0 0" />
+      <mass
+        value="41.388" />
+      <inertia
+        ixx="6.4618"
+        ixy="0.00017247"
+        ixz="-0.70139"
+        iyy="6.7863"
+        iyz="0.0001022"
+        izz="6.4163" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="lb_1">
+    <inertial>
+      <origin
+        xyz="-2.0635E-10 4.0187E-10 -0.060459"
+        rpy="0 0 0" />
+      <mass
+        value="6.893" />
+      <inertia
+        ixx="0.051072"
+        ixy="2.4899E-10"
+        ixz="-1.6445E-11"
+        iyy="0.051072"
+        iyz="-7.868E-11"
+        izz="0.093113" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lb_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lb_1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.50557 0.46488 -0.60576"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lb_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rb_1">
+    <inertial>
+      <origin
+        xyz="3.9553E-09 -1.2288E-09 0.060456"
+        rpy="0 0 0" />
+      <mass
+        value="6.8929" />
+      <inertia
+        ixx="0.051089"
+        ixy="5.6263E-11"
+        ixz="2.5059E-10"
+        iyy="0.051089"
+        iyz="-1.5042E-10"
+        izz="0.093148" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/rb_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/rb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rb_1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.50557 -0.46488 -0.60576"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rb_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="lf_2">
+    <inertial>
+      <origin
+        xyz="0.010959 0.021197 -0.14534"
+        rpy="0 0 0" />
+      <mass
+        value="0.23831" />
+      <inertia
+        ixx="0.0011666"
+        ixy="-1.5828E-05"
+        ixz="0.00017342"
+        iyy="0.001149"
+        iyz="0.00010181"
+        izz="0.00022446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lf_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lf_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_2_joint"
+    type="continuous">
+    <origin
+      xyz="0.32737 0.38539 -0.43683"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lf_2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="lf_1">
+    <inertial>
+      <origin
+        xyz="2.721E-10 -5.0624E-12 0.033"
+        rpy="0 0 0" />
+      <mass
+        value="0.67334" />
+      <inertia
+        ixx="0.0033331"
+        ixy="1.8117E-13"
+        ixz="1.8328E-13"
+        iyy="0.0033331"
+        iyz="-3.4356E-13"
+        izz="0.0065825" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lf_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lf_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_1_joint"
+    type="continuous">
+    <origin
+      xyz="0.023099 -0.033004 -0.21416"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="lf_2" />
+    <child
+      link="lf_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rf_2">
+    <inertial>
+      <origin
+        xyz="0.010959 -0.021197 -0.14534"
+        rpy="0 0 0" />
+      <mass
+        value="0.23831" />
+      <inertia
+        ixx="0.0011666"
+        ixy="1.5828E-05"
+        ixz="0.00017342"
+        iyy="0.001149"
+        iyz="-0.00010181"
+        izz="0.00022446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/rf_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/rf_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_2_joint"
+    type="continuous">
+    <origin
+      xyz="0.32737 -0.38539 -0.43683"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rf_2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rf_1">
+    <inertial>
+      <origin
+        xyz="3.0616E-10 6.0731E-11 -0.033"
+        rpy="0 0 0" />
+      <mass
+        value="0.67334" />
+      <inertia
+        ixx="0.0033331"
+        ixy="2.5865E-12"
+        ixz="2.4846E-12"
+        iyy="0.0033331"
+        iyz="7.8731E-13"
+        izz="0.0065825" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/rf_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/rf_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_1_joint"
+    type="continuous">
+    <origin
+      xyz="0.0230993380896062 0.0330041273825372 -0.214163586043682"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="rf_2" />
+    <child
+      link="rf_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="lidar_l">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 0 -0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0062832" />
+      <inertia
+        ixx="3.6652E-07"
+        ixy="-8.762E-55"
+        ixz="9.3513E-39"
+        iyy="3.6652E-07"
+        iyz="-1.2142E-39"
+        izz="3.1416E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lidar_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lidar_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_l_joint"
+    type="fixed">
+    <origin
+      xyz="0.45047 0.30562 -0.4095"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_l" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_r">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 1.3878E-17 -0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0062832" />
+      <inertia
+        ixx="3.6652E-07"
+        ixy="-8.762E-55"
+        ixz="9.3513E-39"
+        iyy="3.6652E-07"
+        iyz="-1.2142E-39"
+        izz="3.1416E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lidar_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lidar_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_r_joint"
+    type="fixed">
+    <origin
+      xyz="0.45108 -0.30766 -0.4095"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_t">
+    <inertial>
+      <origin
+        xyz="-3.4521E-06 2.4961E-06 -0.015"
+        rpy="0 0 0" />
+      <mass
+        value="0.025137" />
+      <inertia
+        ixx="5.3844E-06"
+        ixy="8.4571E-12"
+        ixz="-3.9594E-21"
+        iyy="5.3786E-06"
+        iyz="2.8481E-12"
+        izz="6.9924E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lidar_t.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Wheelchair_urdf_v2/meshes/lidar_t.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_t_joint"
+    type="fixed">
+    <origin
+      xyz="-0.46383 0 0.76157"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_t" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
